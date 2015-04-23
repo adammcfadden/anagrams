@@ -13,6 +13,6 @@ describe('the anagram path', {:type => :feature}) do
   fill_in('compared_word4', :with => 'tomato')
   fill_in('compared_word5', :with => 'potato')
   click_button('submit')
-  expect(page).to(have_content("mota", "otam", "toma"))
+  expect(page).to have_content("mota  otam  toma")
   end
 end
